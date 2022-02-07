@@ -1,10 +1,16 @@
-function addNumbers(greetingName, ...numbers) {
-  let total = 0;
-  for(index in numbers){
-    total = total + numbers[index];
+const mainUser = {
+  'name': 'Nikolai',
+  'age': 23,
+  'height': "5'9\"",
+  'speak': function(want="food") {
+    console.log(`${mainUser.name} wants ${want}`)
+  },
+  friend(friendName="You"){
+    console.log(`My friends name is ${friendName}`)
   }
-return `${greetingName} the total is ${total}`;
-}
+} 
 
-const newTotal = addNumbers("John", 1, 2);
-console.log(newTotal);
+mainUser.speak("to sleep");
+mainUser.friend("Matt");
+
+let sup = mainUser.speak();
