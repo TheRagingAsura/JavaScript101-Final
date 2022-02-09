@@ -6,7 +6,7 @@
 
 .real-input { 
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(255, 255, 255);
     display: inline-block;
     width: 75px;
     text-align: center;
